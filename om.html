@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om · HOLO TV</title>
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="hologram.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
+<body data-page="about">
+  <header class="site-header">
+    <span class="brand glitch" data-text="HOLO TV">HOLO TV</span>
+    <nav class="site-nav">
+      <a href="index.html">Hem</a>
+      <a href="kanaler.html">Kanaler</a>
+      <a href="favoriter.html">Favoriter</a>
+      <a href="om.html" class="active">Om</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="holo-title">Om HOLO TV</h1>
+      <p>En futuristisk hologram-TV som samlar gratis öppna kanaler från hela världen.</p>
+    </section>
+
+    <section class="holo" style="padding: 1.5rem; line-height: 1.7;">
+      <h2 class="holo-title">Funktioner</h2>
+      <ul>
+        <li>Live-strömning av öppna kanaler via HLS</li>
+        <li>Sök och filtrera på region och kategori</li>
+        <li>Spara favoriter lokalt i din webbläsare</li>
+        <li>Responsiv hologram-design</li>
+      </ul>
+      <h2 class="holo-title">Teknik</h2>
+      <p>Byggd med ren HTML, CSS och JavaScript. Videospelaren använder <a href="https://github.com/video-dev/hls.js" target="_blank" rel="noopener">hls.js</a> för HLS-strömmar.</p>
+      <h2 class="holo-title">Ansvarsfriskrivning</h2>
+      <p>Alla strömmar tillhör respektive rättighetsinnehavare. HOLO TV länkar endast till publikt tillgängliga strömmar och lagrar ingen media själv.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    HOLO TV · Gratis öppna strömmar · Byggd med HTML, CSS &amp; JS
+  </footer>
+
+  <script src="channels.js"></script>
+  <script src="favorites.js"></script>
+  <script src="search.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,1 +1,42 @@
-body { font-family: system-ui, sans-serif; margin: 0; padding: 2rem; color: #0f172a; }
+:root {
+  --bg-0: #02040a;
+  --bg-1: #050b18;
+  --cyan: #00f0ff;
+  --magenta: #ff2bd6;
+  --violet: #7a5cff;
+  --text: #d7f7ff;
+  --muted: #6f8ba3;
+  --glass: rgba(0, 240, 255, 0.06);
+  --border: rgba(0, 240, 255, 0.25);
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(122, 92, 255, 0.18), transparent 45%),
+    radial-gradient(circle at 85% 90%, rgba(255, 43, 214, 0.14), transparent 45%),
+    linear-gradient(160deg, var(--bg-0), var(--bg-1));
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a { color: var(--cyan); text-decoration: none; }
+a:hover { text-shadow: 0 0 8px var(--cyan); }
+
+h1, h2, h3 { letter-spacing: 0.08em; text-transform: uppercase; }
+
+::selection { background: var(--magenta); color: #000; }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-0); }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--cyan), var(--violet));
+  border-radius: 10px;
+}

@@ -3,11 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tv kanal</title>
+  <title>HOLO TV · Globala kanaler</title>
   <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="hologram.css">
+  <link rel="stylesheet" href="layout.css">
 </head>
-<body>
-  <h1>Välkommen till tv kanal</h1>
+<body data-page="home">
+  <header class="site-header">
+    <span class="brand glitch" data-text="HOLO TV">HOLO TV</span>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Hem</a>
+      <a href="kanaler.html">Kanaler</a>
+      <a href="favoriter.html">Favoriter</a>
+      <a href="om.html">Om</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1 class="holo-title">Globala kanaler · Live</h1>
+      <p>Futuristisk hologram-TV – strömma gratis kanaler från hela världen.</p>
+    </section>
+
+    <section class="player-wrap holo pulse">
+      <div class="player-frame">
+        <video id="video" controls playsinline></video>
+      </div>
+      <div class="player-info">
+        <h2 id="player-title">Välj en kanal</h2>
+        <span id="player-meta" class="meta"></span>
+      </div>
+    </section>
+
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Sök kanal, land, kategori…" aria-label="Sök">
+      <select id="region-filter" aria-label="Region">
+        <option value="">Alla regioner</option>
+      </select>
+      <select id="category-filter" aria-label="Kategori">
+        <option value="">Alla kategorier</option>
+      </select>
+    </div>
+
+    <section id="channel-grid" class="channel-grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    HOLO TV · Gratis öppna strömmar · Byggd med HTML, CSS &amp; JS
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
+  <script src="channels.js"></script>
+  <script src="favorites.js"></script>
+  <script src="search.js"></script>
+  <script src="player.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
